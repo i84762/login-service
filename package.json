@@ -1,0 +1,17 @@
+{
+  "name": "login-service",
+  "version": "1.0.0",
+  "description": "login microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.6.2",
+    "stomp": "^0.1.1",
+    "stomp-client": "^0.9.0"
+  }
+}
