@@ -16,7 +16,7 @@ exports.getSchema =(mongoose) => {
     originToken: { type: String, trim: true},
     originDisplayName: { type: String, trim: true},
     originUsername: { type: String, trim: true},
-    email: { type: String, trim: true, unique: true, index: true, required: true },
+    email: { type: String, trim: true,  index: true, required: true },
     // todo rememberMe feature use
     rememberMe: { type: Boolean, default: false },
     password: { type: String, required: false },
@@ -34,6 +34,6 @@ exports.getSchema =(mongoose) => {
     }],
     status: { type: Number, default: 0, required: true },
   }, { timestamps: true });
-
+  userSchema.index({ email: 1}, { unique: true });
   return mongoose.model('User', userSchema);
 }

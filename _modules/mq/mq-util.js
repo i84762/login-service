@@ -43,7 +43,7 @@ function subscribeQueue(queueName, callback, firstHeaders)
                                             // console.log(firstHeaders);
                                                 if(deleteQueue != null && deleteQueue)
                                                 {
-                                                    console.log('Should be unsubscribed ' + queueName);
+                                                    // console.log('Should be unsubscribed ' + queueName);
                                                     // unsubscribeQueue(queueName);
                                                     client.unsubscribe(config.get('/queuePrefix') + queueName,headers);
                                                 }

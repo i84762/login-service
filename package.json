@@ -1,5 +1,5 @@
 {
-  "name": "login-service",
+  "name": "commons",
   "version": "1.0.0",
   "description": "login microservice",
   "main": "index.js",
